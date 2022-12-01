@@ -3,7 +3,12 @@ import "./App.css";
 import Filters from "./components/Filters";
 import TodoList from "./components/TodoList";
 
+import { setupServer } from "./fakeApis";
+
+setupServer();
+
 const { Title } = Typography;
+
 function App() {
   return (
     <div
